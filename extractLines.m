@@ -125,6 +125,7 @@ function [alphaOut, rOut, pointIdxOut] = mergeColinearNeigbors (XY, alpha, r, po
             z = zt;
         else % no further merging
             alphaOut(j, 1) = z(1);
+           
             rOut(j, 1) = z(2);
             pointIdxOut(j, :) = [startIdx, lastEndIdx];
             j = j + 1;
@@ -138,3 +139,6 @@ function [alphaOut, rOut, pointIdxOut] = mergeColinearNeigbors (XY, alpha, r, po
     rOut(j, 1) = z(2);
     pointIdxOut(j, :) = [startIdx, lastEndIdx];
 end
+
+
+next test
